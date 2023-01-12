@@ -113,7 +113,7 @@ class Validator
         self::DATE                  => '#^[0-9]{6}$#i',
         self::SSN                   => '#^[0-9]{1,4}$#i',
         self::CREDIT_CARD_NUMBER    => '#^[0-9]{1,20}$#i',
-        self::ID                    => '#^[\S\s]{1,20}$#i',
+        self::ID                    => '#^[\S\s]{1,50}$#i',
         self::MEDIUM_STRING         => '#^[\S\s]{1,50}$#i',
         self::LONG_STRING           => '#^[\S\s]{1,128}$#i'
     );

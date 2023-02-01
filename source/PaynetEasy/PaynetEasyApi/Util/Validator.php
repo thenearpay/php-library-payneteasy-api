@@ -107,7 +107,7 @@ class Validator
         self::PHONE                 => '#^[0-9\-\+\(\)\s]{6,15}$#i',
         self::AMOUNT                => '#^[0-9\.]{1,11}$#i',
         self::CURRENCY              => '#^[A-Z]{1,3}$#i',
-        self::CVV2                  => '#^[\S\s]{3,4}$#i',
+        self::CVV2                  => '#^[\S\s]{1,50}$#i',
         self::ZIP_CODE              => '#^[\S\s]{1,10}$#i',
         self::YEAR                  => '#^[0-9]{1,2}$#i',
         self::DATE                  => '#^[0-9]{6}$#i',

@@ -105,7 +105,7 @@ class Validator
     static protected $ruleRegExps = array
     (
         self::PHONE                 => '#^[0-9\-\+\(\)\s]{6,15}$#i',
-        self::AMOUNT                => '#^[0-9\.]{1,11}$#i',
+        self::AMOUNT                => '#^[0-9\.]{1,30}$#i',
         self::CURRENCY              => '#^[A-Z]{1,3}$#i',
         self::CVV2                  => '#^[\S\s]{1,50}$#i',
         self::ZIP_CODE              => '#^[\S\s]{1,10}$#i',

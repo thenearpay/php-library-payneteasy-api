@@ -200,6 +200,16 @@ class Response extends ArrayObject
     {
         return $this->getValue('redirect-url');
     }
+    
+     /**
+     * Get response redirect to
+     *
+     * @return      string
+     */
+    public function getRedirectTo()
+    {
+        return $this->getValue('redirect-to');
+    }
 
     /**
      * Get response control code

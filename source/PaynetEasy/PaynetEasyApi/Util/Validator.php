@@ -98,6 +98,11 @@ class Validator
     const LONG_STRING   = 'long_string';
 
     /**
+     * Validate value as highly long string
+     */
+    const HIGHLY_LONG_STRING   = 'highly_long_string';
+
+    /**
      * Regular expressions for some validation rules
      *
      * @var array
@@ -115,7 +120,8 @@ class Validator
         self::CREDIT_CARD_NUMBER    => '#^[0-9]{1,20}$#i',
         self::ID                    => '#^[\S\s]{1,100}$#i',
         self::MEDIUM_STRING         => '#^[\S\s]{1,50}$#i',
-        self::LONG_STRING           => '#^[\S\s]{1,128}$#i'
+        self::LONG_STRING           => '#^[\S\s]{1,128}$#i',
+        self::HIGHLY_LONG_STRING    => '#^[\S\s]{1,200}$#i',
     );
 
     /**
